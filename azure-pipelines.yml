@@ -6,8 +6,10 @@
 trigger:
 - main
 
-pool:
-  name: PoolDevCenter0410
+pool: 
+  name: PoolDevCenter0410 # Name of Managed DevOps Pool
+  demands:
+  - WorkFolder -equals /mnt/storage/sdc/custom-work-folder
 
 steps:
 - script: echo Hello, world!
