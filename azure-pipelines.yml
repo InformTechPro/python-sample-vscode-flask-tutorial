@@ -10,6 +10,7 @@ pool:
   name: PoolDevCenter0410 # Name of Managed DevOps Pool
   demands:
   - WorkFolder -equals /mnt/storage/sdc/custom-work-folder
+#https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/configure-storage?view=azure-devops&tabs=azure-portal%2Clinux
 
 steps:
 - script: echo Hello, world!
